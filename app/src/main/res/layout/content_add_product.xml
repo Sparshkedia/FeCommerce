@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".addProduct"
+    tools:showIn="@layout/activity_add_product">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:text="Name" />
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginTop="60dp"
+            android:layout_marginLeft="10dp"
+            android:text="Available(Kg)" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginTop="120dp"
+            android:layout_marginLeft="10dp"
+            android:text="Catogery" />
+
+        <EditText
+            android:id="@+id/editItemName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Name of item" />
+
+        <EditText
+            android:id="@+id/editItemKg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="50dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="kg" />
+
+        <RadioGroup
+            android:id="@+id/CategoryRadioGrp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="120dp"
+            android:layout_marginTop="130dp" >
+
+            <RadioButton
+                android:id="@+id/radioButton1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Vegetable" />
+
+            <RadioButton
+                android:id="@+id/radioButton2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Fruits" />
+
+            <RadioButton
+                android:id="@+id/radioButton3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Grains" />
+
+            <RadioButton
+                android:id="@+id/radioButton4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ByProduct" />
+
+
+        </RadioGroup>
+        <Button
+            android:id="@+id/takeImageButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Take Pic"
+            android:layout_below="@id/CategoryRadioGrp"
+            android:layout_marginTop="20dp"
+            />
+        <ImageView
+            android:id="@+id/PicView"
+            android:layout_below="@id/takeImageButton"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="100dp"
+            android:layout_width="200dp"
+            android:layout_height="300dp"
+            />
+    </RelativeLayout>
+</androidx.core.widget.NestedScrollView>
