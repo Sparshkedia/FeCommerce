@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Customer_Itemview_recyclerview"></activity>
+        <activity android:name=".buy_now"></activity>
+        <activity android:name=".Customer_Itemview_recyclerview" />
         <activity android:name=".Main0Activity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

@@ -1,6 +1,9 @@
 package com.example.fecommerce;
 
 import android.content.Context;
+import android.content.Intent;
+import android.os.Parcelable;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -51,6 +54,18 @@ public class item_recyclerview_myadapter extends RecyclerView.Adapter<item_recyc
         public Myviewholder(@NonNull View itemView) {
 
             super(itemView);
+
+            itemView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Intent i = new Intent(v.getContext(),buy_now.class);
+                    Log.e("tag",Long.toString(arrayList.get(getAdapterPosition()).getPrice()));
+                    i.putExtra("name", arrayList.get(getAdapterPosition()).getName());
+                    i.putExtra("price", Long.toString(arrayList.get(getAdapterPosition()).getPrice()));
+                   // i.putExtra("weight", arrayList.get(getAdapterPosition()).getWtAvail());
+                    v.getContext().startActivity(i);
+                }
+            });
             //imageView=(ImageView)itemView.findViewById(R.id.imageView);
             name=(TextView)itemView.findViewById(R.id.I_name);
             loc=(TextView)itemView.findViewById(R.id.loc);
