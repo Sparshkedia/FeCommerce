@@ -1,0 +1,77 @@
+{
+  "project_info": {
+    "project_number": "902718664585",
+    "firebase_url": "https://farmerportal-3a731.firebaseio.com",
+    "project_id": "farmerportal-3a731",
+    "storage_bucket": "farmerportal-3a731.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:902718664585:android:246788fac95c376a773b58",
+        "android_client_info": {
+          "package_name": "com.example.fecommerce"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "902718664585-m4dpd676r1l2tqq5jels8j729phaf35k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD78oOZRvTbuEM5nifxH5LE12jyDQbNspc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "902718664585-m4dpd676r1l2tqq5jels8j729phaf35k.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:902718664585:android:0b87dc774c173a49773b58",
+        "android_client_info": {
+          "package_name": "com.example.gogreen.farmerportal"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "902718664585-3o6q70d2obbp739uckt506o5gmr2hq37.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.gogreen.farmerportal",
+            "certificate_hash": "853700b20a85645898c45afc817f0800cc756e24"
+          }
+        },
+        {
+          "client_id": "902718664585-m4dpd676r1l2tqq5jels8j729phaf35k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD78oOZRvTbuEM5nifxH5LE12jyDQbNspc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "902718664585-m4dpd676r1l2tqq5jels8j729phaf35k.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
