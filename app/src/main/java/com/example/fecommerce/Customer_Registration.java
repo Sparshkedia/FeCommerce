@@ -41,7 +41,7 @@ public class Customer_Registration extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_customer__registration);
 
-
+// storing refernce of each textfield/buttons
         mAuth=FirebaseAuth.getInstance();
         mprogress=new ProgressDialog(this);
         sign=(Button)findViewById(R.id.signin);
@@ -51,7 +51,7 @@ public class Customer_Registration extends AppCompatActivity {
         address=(TextInputLayout)findViewById(R.id.address);
         pass=(TextInputLayout)findViewById(R.id.pass);
 
-
+//adding event listener on signin button
         sign.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -76,7 +76,7 @@ public class Customer_Registration extends AppCompatActivity {
             }
         });
     }
-
+//doing sigin and storing details of user in firebase
     private void signin() {
 
         mAuth.createUserWithEmailAndPassword(c_email, c_pass)
